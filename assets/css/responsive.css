@@ -1,0 +1,458 @@
+@media only screen and (min-width: 992px) and (max-width: 1170px) {
+  .container {
+    width: 970px;
+  }
+  
+  .header-menu-left {
+    width: 435px;
+  }
+
+  .header-menu-left nav ul li {
+    margin-right: 25px;
+  }
+
+  .header-menu-right {
+    width: 435px;
+  }
+
+  .header-menu-right nav ul li {
+    margin-left: 25px;
+  }
+
+  .single-card {
+    width: 189px;
+  }
+
+  .about-content {
+    width: 430px;
+  }
+
+  .special-single-bake {
+    width: 210px;
+  }
+
+  .single-services {
+    width: 335px;
+  }
+
+  .reservation-form {
+    width: 510px;
+  }
+
+  .reservation-location {
+    width: 330px;
+  }
+
+  .menu-img {
+    width: 360px;
+  }
+
+  .menu-content {
+    width: 550px;
+  }
+
+  .menu-single-content {
+    padding-bottom: 15px;
+  }
+
+  .single-team-img {
+    width: 234px;
+    margin-right: 8px;
+  }
+
+  .single-team-img:last-child {
+    margin-right: 0;
+
+  }
+
+  .single-testimonial,
+  .single-blog {
+    width: 485px;
+    margin-bottom: 50px;
+  }
+
+  .testimonial-img,
+  .blog-img {
+    width: 100px;
+  }
+
+  .testimonial-content,
+  .blog-content {
+    width: 355px;
+  }
+
+  .single-cake {
+    width: 308px;
+  }
+
+  .contact-info {
+    width: 370px;
+    margin-right: 20px;
+  }
+
+  .contact-form {
+    width: 540px;
+  }
+
+  .single-footer {
+    width: 204px;
+  }
+
+  .copyright-content,
+  .copyright-terms {
+    width: 485px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .container {
+    width: 750px;
+  }
+
+  .header-menu-left,
+  .header-menu-right {
+    width: 325px;
+  }
+
+  .header.logo {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .header-menu-left nav ul li {
+    margin-right: 8px;
+  }
+
+  .header-menu-right nav ul li {
+    margin-left: 8px;
+  }
+
+  .single-card {
+    width: 145px;
+  }
+
+  .about-content {
+    width: 340px;
+  }
+
+  .about-content p {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-img {
+    width: 410px;
+  }
+
+  .about-single-img-left,
+  .about-single-img-right {
+    width: 200px;
+  }
+
+  .about-single-img-right {
+    margin-left: 10px;
+  }
+
+  .special-single-bake {
+    width: 155px;
+  }
+
+  .single-services {
+    width: 240px;
+  }
+
+  .service-content {
+    margin-bottom: 0;
+  }
+
+  .service-img {
+    width: 270px;
+  }
+
+  .reservation-form {
+    width: 410px;
+  }
+
+  .reservation-location {
+    width: 330px;
+  }
+
+  .menu-img {
+    width: 300px;
+  }
+
+  .menu-content {
+    width: 430px;
+  }
+
+  .menu-content-left {
+    width: 450px;
+  }
+
+  .single-team-img {
+    width: 375px;
+  }
+
+  .single-testimonial,
+  .single-blog {
+    width: 375px;
+  }
+
+  .testimonial-img,
+  .blog-img {
+    width: 100px;
+  }
+
+  .testimonial-content,
+  .blog-content {
+    width: 245px;
+  }
+
+  .single-cake {
+    width: 235px;
+  }
+
+  .contact-info {
+    width: 295px;
+    margin-right: 0;
+  }
+
+  .contact-form {
+    width: 435px;
+    margin-left: 20px;
+  }
+
+  .single-footer {
+    width: 187px;
+    padding: 0px;
+  }
+
+  .single-footer p {
+    max-width: 150px;
+  }
+
+  .social-icon {
+    width: 93px;
+    text-align: center;
+  }
+
+  .copyright-content {
+    width: 396px;
+  }
+
+  .copyright-terms {
+    width: 304px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .header.logo {
+    position: absolute;
+    top: 0;
+    transform: translateX(-30%);
+    left: 50%;
+    z-index: 1;
+  }
+
+  .header.logo img {
+    width: 55px;
+  }
+
+  .header-menu-left {
+    width: 100%;
+    padding: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .header-menu-right {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+
+  }
+
+  .header-menu-left nav ul li,
+  .header-menu-right nav ul li {
+    margin: 5px;
+  }
+  .header-menu-left nav ul li a,
+  .header-menu-right nav ul li a {
+    text-decoration: underline;
+  }
+  .banner-content {
+    transform: translate(-50%, 80%);
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .section-title h4 {
+    font-size: 31px;
+  }
+
+  .section-title p {
+    padding-top: 0;
+  }
+
+  .section-title .btn {
+    padding: 8px 15px;
+  }
+
+  .single-card {
+    width: 100%;
+    margin-bottom: 55px;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .cards {
+    position: static;
+  }
+
+  .abouts,
+  .special-bakes {
+    text-align: center;
+  }
+
+  .about-content {
+    margin-bottom: 25px;
+  }
+
+  .about-content,
+  .about-img,
+  .about-single-img-left,
+  .about-single-img-right {
+    width: 100%;
+  }
+
+  .about-single-img-right {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .about-content .section-title,
+  .contact-info .section-title {
+    text-align: center;
+  }
+
+  .special-single-bake {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .disscount-card {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .disscount-card {
+    left: 50%;
+  }
+
+  .disscount-card .section-title {
+    text-align: center;
+  }
+
+  .disscount-card .ribbon-img {
+    position: absolute;
+    top: -50%;
+    right: 0;
+    transform: translate(-50%, 50%);
+    width: 70px;
+    bottom: 50%;
+  }
+
+  .single-services,
+  .service-img {
+    width: 100%;
+  }
+
+  .reservation-form,
+  .menu-content-left,
+  .price-right,
+  .single-cake {
+    width: 100%;
+  }
+
+  .reservation-form {
+    margin-right: 0;
+  }
+
+  .reservation-location {
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .menu-img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .menu-content {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .single-team-img {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .testimonials {
+    text-align: center;
+  }
+
+  .single-testimonial,
+  .single-blog {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-img,
+  .blog-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial-content,
+  .blog-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-team-btn {
+    padding: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .single-footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright-terms {
+    width: 100%;
+    text-align: center;
+  }
+}

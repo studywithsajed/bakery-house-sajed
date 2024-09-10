@@ -1,0 +1,976 @@
+/*
+Template Name: Bakery and Pestry Website
+ Author: Sajedul Islam 
+ Description:
+     01. Artisan Bread: Handcrafted bread made with traditional methods,
+      using high-quality ingredients and often featuring unique flavors and textures. Artisan bread emphasizes craftsmanship and time-honored techniques.
+    02. Pastry Chef: A skilled professional who specializes in creating      ,pastries
+      cakes,
+      and other baked goods. A pastry chef combines creativity and technical expertise to design visually appealing and delicious products. Gourmet Pastries: High-quality,
+      exquisitely crafted pastries that often feature premium ingredients,
+      intricate designs,
+      and innovative flavors. These are typically found in upscale bakeries and fine dining establishments. Sourdough: A type of bread made using a naturally fermented starter rather than commercial yeast. Sourdough is known for its tangy flavor,
+      chewy texture,
+      and crusty exterior. Croissants: Flaky,
+      buttery pastries with a crescent shape,
+      originally from France. Made from laminated dough,
+      croissants are popular for breakfast and are often enjoyed plain or with various fillings. Gluten-Free Baking: The process of baking goods without gluten,
+      a protein found in wheated and related grains. This approach uses alternative flours and ingredients to create baked products suitable for those with gluten sensitivities or celiac disease. Custom Cakes: Cakes that are designed and decorated according to specific requests or themes. Custom cakes often feature personalized decorations and are used for special occasions like weddings,
+      birthdays,
+      and anniversaries. French Patisserie: A style of pastry-making that originates from France,
+      characterized by delicate and intricate baked goods such as éclairs,
+      tarts,
+      and mille-feuille. French patisserie emphasizes artistry and precision. Baker’s Yeast: A type of yeast used as a leavening agent in baking to help dough rise. It is available in various forms,
+      including active dry,
+      instant,
+      and fresh yeast,
+      and is essential for making bread and rolls. Cake Decorating: The art and technique of embellishing cakes with various designs,
+      including frosting,
+      fondant,
+      and edible decorations. Cake decorating transforms a simple cake into a visually appealing centerpiece. Whole Grain Baking: The practice of using whole grains and flours in baking,
+      which provides a richer flavor,
+      denser texture,
+      and greater nutritional benefits compared to refined flours. Fondant: A smooth,
+      pliable icing used for covering cakes and creating intricate decorations. Fondant can be rolled out and shaped to create elegant designs and is often used in high-end cake decorating. Baking Ingredients: Various components used in the baking process,
+      including flour,
+      sugar,
+      eggs,
+      butter,
+      and leavening agents. The quality and combination of these ingredients impact the final product's texture and flavor.
+
+ Index====
+  01. Common
+  02. Header 
+  03. Banner 
+  04. Doctors 
+  05. Medical 
+  06. Department 
+  07. Contain
+  08. Newsletter 
+  09. Contact 
+  10. Footer
+*/
+/* Google Font Link Here */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Frank+Ruhl+Libre:wght@300..900&family=Pacifico&display=swap');
+/* Common Css Start Here */
+
+/* Color Variable  Start Here*/
+:root {
+  --bg-color: #fcf6f2;
+  --white-color: #ffffff;
+  --cart-btn-color: #ddd4d4;
+  --cart-btn-hover: #e9e6ed;
+  --text-color: #242424;
+  --gray-color: #8a8887;
+  --btn-bg-nolor: #ffa276;
+}
+
+/* Color Variable  End Here*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.fix::before,
+.fix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section-title span {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--btn-bg-nolor);
+  font-family: "Pacifico", system-ui;
+}
+
+.section-title h4 {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.section-title p {
+  font-family: "DM Sans", system-ui;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text-color);
+  padding: 37px 0;
+}
+
+.btn {
+  background: var(--btn-bg-nolor);
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid var(--btn-bg-nolor);
+  color: var(--white-color);
+
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.box {
+  width: 100%;
+  background: var(--white-color);
+  padding: 10px;
+  height: auto;
+  border-radius: 12px;
+  transition: .3s;
+  box-shadow: 10px 14px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Common Css End Here */
+
+/* Header Css Start Here  */
+.header-area {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.header-area:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: .7;
+  z-index: -1;
+}
+.header-menu-left {
+  width: 535px;
+  float: left;
+  padding: 36px 0;
+}
+
+.header-menu-left nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.header-menu-left nav ul li a,
+.header-menu-right nav ul li a {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+
+.header.logo {
+  width: 100px;
+  float: left;
+  padding: 5px 0;
+}
+
+.header-menu-right {
+  width: 535px;
+  float: left;
+  padding: 36px 0;
+  text-align: right;
+}
+
+.header-menu-right nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.header-menu-left nav ul li a:hover,
+.header-menu-right nav ul li a:hover {
+  color: var(--btn-bg-nolor);
+}
+
+
+
+/* Header Css End Here  */
+
+/* Banner Css Start Here  */
+.banner-content {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.banner-content .section-title h4,
+.banner-content .section-title p {
+  color: var(--white-color);
+}
+
+.cards {
+  position: absolute;
+  top: 90%;
+  bottom: -50%;
+  z-index: 9;
+}
+
+.single-card {
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 0;
+  text-align: center;
+}
+
+.height {
+  height: 142px;
+  text-transform: capitalize;
+  padding: 20px;
+}
+
+.height a {
+  text-decoration: underline;
+  color: var(--btn-bg-nolor);
+  font-size: 18px;
+}
+
+/* Banner Css End Here  */
+
+/* About Css Start Here  */
+.about-area {
+  background: var(--bg-color);
+}
+
+.about-content {
+  width: 630px;
+  float: left;
+}
+
+.about-img {
+  width: 540px;
+  float: left;
+}
+
+.about-single-img-left {
+  width: 264px;
+  float: left;
+}
+
+.about-single-img-right {
+  width: 256px;
+  float: left;
+  padding: 160px 0 0;
+  margin-left: 20px;
+}
+
+.about-single-img-left img {
+  margin-bottom: 30px;
+}
+
+.about-content .section-title,
+.contact-info .section-title {
+  text-align: left;
+}
+
+.about-content .section-title h4 {
+  font-size: 40px;
+  line-height: 60px;
+  padding-top: 10px;
+}
+
+.about-content .section-title p {
+  color: var(--text-color);
+  font-size: 22px;
+  line-height: 35px;
+  max-width: 540px;
+
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 560px;
+  color: var(--gray-color);
+  padding-bottom: 35px;
+}
+
+.about-content .btn {
+  background: transparent;
+  color: var(--text-color);
+  transition: .3s;
+  text-transform: capitalize;
+}
+
+.about-content .btn:hover {
+  background: var(--btn-bg-nolor);
+  color: var(--white-color);
+}
+
+/* About Css End Here  */
+
+/* Specials Area Css Start Here  */
+
+.special-single-bake {
+  width: 260px;
+  float: left;
+  margin-right: 43px;
+}
+.special-single-bake:last-child {
+  margin-right: 0;
+}
+
+.product-link {
+  display: block;
+  padding: 20px 0;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.product-link:hover {
+  color: var(--btn-bg-nolor);
+}
+
+.special-single-bake p {
+  font-family: "Frank Ruhl Libre", system-ui;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  padding: 15px 0;
+  text-transform: capitalize;
+
+}
+
+.special-single-bake del {
+  margin-right: 10px;
+}
+
+.cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--cart-btn-color);
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.button {
+  display: block;
+  padding: 20px 0 0;
+}
+
+.cart-btn:hover {
+  background: var(--cart-btn-hover);
+}
+
+/* Specials Area Css End Here  */
+
+/* Disscount Area Css Start Here  */
+
+.disscount-area {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.disscount-card {
+  width: 543px;
+  padding: 30px;
+  position: relative;
+  background: var(--white-color);
+}
+
+.disscount-card .section-title {
+  text-align: left;
+}
+
+.disscount-card .section-title .btn:hover {
+  color: var(--text-color);
+}
+
+.disscount-card {
+  position: absolute;
+  left: 60%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.disscount-card .ribbon-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20%, -30%);
+}
+
+/* Disscount Area Css End Here  */
+
+/* Services Area Css Start Here  */
+
+.single-services {
+  width: 435px;
+  float: left;
+  text-align: center;
+}
+
+.service-img {
+  width: 300px;
+  float: left;
+}
+
+.service-content {
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.service-content img {
+  padding: 25px;
+}
+
+.service-content h5 {
+  font-family: "Frank Ruhl Libre", system-ui;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+
+.service-content p {
+  font-size: 18px;
+  line-height: 32px;
+  padding: 10px;
+}
+
+/* Services Area Css End Here  */
+
+/* Reservation Area Css Start Here  */
+
+.reservation-form {
+  float: left;
+  width: 600px;
+  padding: 30px;
+  margin-right: 10px;
+}
+
+.reservation-location {
+  width: 560px;
+  float: left;
+  padding: 30px;
+}
+.reservation-location iframe{
+  width: 100%;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid var(--cart-btn-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: var(--btn-bg-nolor);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid var(--btn-bg-nolor);
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: var(--text-color);
+  transition: .3s;
+}
+
+/* Reservation Area Css End Here  */
+
+/* Menu Area Css Start Here  */
+
+.menu-img {
+  width: 500px;
+  float: left;
+}
+
+.menu-content {
+  width: 650px;
+  float: left;
+  margin-left: 20px;
+}
+
+.menu-content .btn {
+  text-transform: capitalize;
+  background: transparent;
+  color: var(--text-color);
+}
+
+.menu-content .btn:hover {
+  background: var(--btn-bg-nolor);
+  color: var(--white-color);
+  transition: .3s;
+}
+
+.menu-single-content {
+  padding-bottom: 60px;
+}
+
+.menu-content-left {
+  width: 530px;
+  float: left;
+}
+
+.price-right {
+  width: 120px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
+.price-right del {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.menu-content-left h5 {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 0 0px 25px 0;
+}
+
+.menu-content-left p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Menu Area Css End Here  */
+
+/* Our Team Area Css Start Here  */
+.our-team-area {
+  background-color: var(--bg-color);
+}
+
+.single-team-img {
+  width: 292px;
+  float: left;
+  text-align: center;
+}
+
+.single-team-img h4 {
+  font-family: "Frank Ruhl Libre", system-ui;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-top: 26px;
+}
+
+.single-team-img h4 span {
+  display: block;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+}
+
+.our-team-btn {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.our-team-btn .btn {
+  background: transparent;
+  color: var(--text-color);
+}
+
+.our-team-btn .btn:hover {
+  background: var(--btn-bg-nolor);
+  color: var(--white-color);
+}
+
+/* Our Team Area Css End Here  */
+
+/* Our Coustomer Area Css Start Here  */
+
+.single-testimonial,
+.single-blog {
+  width: 575px;
+  float: left;
+}
+
+.testimonial-img,
+.blog-img {
+  width: 140px;
+  float: left;
+  margin-right: 30px;
+}
+
+.testimonial-img img {
+  border-radius: 50%;
+}
+
+.testimonial-content,
+.blog-content {
+  width: 400px;
+  float: left;
+  padding: 20px 0;
+}
+
+.testimonial-content p {
+  padding: 10px;
+}
+
+.testimonial-content h4,
+.blog-content h4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.testimonial-content h4 span,
+.blog-content h4 span {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+}
+
+/* Our Coustomer Area Css End Here  */
+
+/* Our Blog Area Css Start Here  */
+.blog-img img {
+  border-radius: 0;
+  height: 154px;
+}
+
+.blog-content {
+  padding: 0;
+}
+
+.blog-content a {
+  text-transform: capitalize;
+  color: var(--text-color);
+  padding: 10px;
+}
+
+.blog-content p {
+  padding: 25px 0;
+  font-weight: 300;
+}
+
+.blog-link {
+  border-bottom: 1px solid var(--btn-bg-nolor);
+  display: inline-block;
+}
+
+
+.blog-link:hover a i {
+  margin: 0 11px;
+  transition: .3s;
+}
+
+.blog-link a {
+  padding: 0;
+  color: var(--btn-bg-nolor);
+}
+
+.blog-content a:hover {
+  color: var(--btn-bg-nolor);
+}
+
+/* Our Blog Area Css End Here  */
+
+/* Our Cake Area Css Start Here  */
+.cake-img-area {
+  background: var(--bg-color);
+}
+
+.single-cake {
+  width: 380px;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+.single-cake:last-child {
+  margin-right: 0;
+}
+
+/* Our Cake Area Css End Here  */
+
+/* Our Contact Area Css Start Here  */
+.contact-info {
+  width: 450px;
+  float: left;
+  margin-right: 55px;
+}
+
+.contact-form {
+  width: 665px;
+  float: left;
+}
+
+.contact-info ul li i {
+  color: var(--btn-bg-nolor);
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 16px;
+}
+
+.contact-info ul li {
+  margin-top: 10px;
+}
+
+.contact-info span {
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.contact-info a {
+  color: var(--text-color);
+}
+
+.contact-info a:hover {
+  color: var(--btn-bg-nolor);
+}
+
+/* Our Contact Area Css End Here  */
+
+/* Our Contact Area Css End Here  */
+
+.footer-area {
+  background: var(--text-color);
+}
+
+.single-footer {
+  width: 292px;
+  float: left;
+  padding: 20px;
+  color: var(--white-color);
+}
+
+.single-footer h6 {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 33px 0;
+}
+
+.single-footer:last-child {
+  padding-right: 0;
+}
+
+.single-footer p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.single-footer ul li {
+  padding: 15px 0;
+}
+
+.single-footer ul li a {
+  color: var(--white-color);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.single-footer ul li i {
+  margin-right: 20px;
+}
+
+.social-icon {
+  width: 68px;
+  float: left;
+  text-align: end;
+}
+
+.social-icon a i:last-child {
+  margin-right: 0;
+}
+
+.single-footer ul li a:hover {
+  color: var(--btn-bg-nolor);
+}
+
+.copyright-area {
+  margin-top: 40px;
+  border-top: 1px solid var(--bg-color);
+  padding-top: 20px;
+}
+
+.copyright-content {
+  float: left;
+  width: 584px;
+  text-transform: capitalize;
+}
+
+.copyright-content p {
+  padding: 0 18px;
+  color: var(--white-color);
+}
+
+.copyright-terms {
+  width: 585px;
+  float: left;
+  text-align: end;
+}
+
+.copyright-terms ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.copyright-terms ul li a {
+  display: inline-block;
+  color: var(--white-color);
+}
+
+.copyright-terms ul li a:hover {
+  color: var(--btn-bg-nolor);
+}
+
+.copyright-content a {
+  color: var(--white-color);
+  font-size: 20px;
+  padding: 0 10px;
+  font-style: italic;
+  border-bottom: 1px solid var(--btn-bg-nolor);
+}
+
+.copyright-content a:hover {
+  color: var(--btn-bg-nolor);
+}
+
+.back-btn {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.back-btn a {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white-color);
+  border: 1px solid var(--btn-bg-nolor);
+}
+
+.back-btn a i {
+  padding: 5px;
+}
+
+.back-btn a:hover {
+  color: var(--btn-bg-nolor);
+  border: 1px solid var(--bg-color);
+}
+
+/* Our Contact Area Css End Here  */
+
+/* Css End Here */
